@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Components</title>
+	<script defer src="./dist/custom-card.js"></script>
+</head>
+<body>
+	<template id="card-component">
+		<slot name="title"></slot>
+		<slot name="p"></slot>
+	</template>
+	<custom-card>
+		<p slot="p">A description</p>
+		<h1 slot="title">This was declared last</h1>
+	</custom-card>
+</body>
+</html>
